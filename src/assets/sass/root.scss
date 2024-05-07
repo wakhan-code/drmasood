@@ -5,10 +5,10 @@
 <--- -------------------------- -*/
 
 /* CodeStitch Root and Helpers */
-@media only screen and (min-width: 0em) {
+@media only screen and (min-width: 0em) {  
     // Website colors
     :root {
-        --primary: #ffba19;
+        --primary: #05A689;
         --primaryLight: #ffd675;
         --secondary: #001f3f;
         --secondaryLight: #001f3f;
@@ -1438,6 +1438,43 @@
     body.dark-mode {
         #footer {
             background: #061623;
+        }
+    }
+}
+/* custome /////////////////////////////////////////////////////////////////*/
+@media only screen and (min-width: 0em) {
+    #cs-navigation{
+        padding: 10px;
+        background-color: #043A53;
+        color:#fff;
+    }
+    .cs-button-solid{
+        border-radius: 10px;
+        color: #fff;
+    }
+    #cs-navigation .cs-li-link{
+        color: #FFF;
+    }
+    .cs-logo h2 {
+        text-decoration: none; /* Remove !important */
+      }
+    .cs-logo {
+        h2 {
+            width: 432px;
+            height: 54px;
+            margin-top: 30px;
+            
+            gap: 0px;
+            opacity: 0px;
+            font-family: Lexend Deca;
+            font-size: 32px;
+            font-weight: 400;
+            line-height: 24px;
+            text-align: left;
+            color:#fff;
+            
+            text-wrap: nowrap;
+            margin-left: 150px;
         }
     }
 }
