@@ -227,6 +227,7 @@ padding: 20px;
 }
 
 .play-button svg {
+    margin-left: 12px;
     width: 70%;
     height: 70%;
     fill: #05A689;
@@ -509,116 +510,7 @@ color:#fff;
         /*------------------------ testimonial-section start------------------------*/
 
 
-        #testimonial-section{
-            background-color: #f3f5f6;
-            display: flex;
-           justify-content: center;
-        align-items: center;
-        }
-        .testimonial-slider {
-          position: relative;
-          overflow: hidden;
-          max-width: 90%;
-          padding-top: 100px;
-         
-        }
-        
-        .testimonial-container {
-            margin-right: 10px;
-            padding-top: 50px;
-          padding-bottom: 100px;
-          display: flex;
-          transition: transform 0.5s ease;
-        }
-        
-        .testimonial {
-            background-color: #fff;
-            border-radius: 10px;
-            padding: 10px;
-            flex: 0 0 calc(50% - 20px); /* Adjust width calculation to account for margin */
-            margin: 0 10px; /* Add margin to create a gap */
-        }
-        .testimonial-slider h1{
-            
-        font-family: Lato;
-        font-size: 60px;
-        font-weight: 700;
-        line-height: 72px;
-        letter-spacing: -0.02em;
-        text-align: left;
-        
-        }
-        
-        .testimonial p{
-        padding: 5px;;    
-        font-family: Lato;
-        font-size: 24px;
-        font-weight: 400;
-        line-height: 32px;
-        text-align: left;
-        
-        }
-        .testimonial-img{
-            margin: 10px;
-            display: flex;
-        }
-        .pro-img img{
-            border-radius: 25px;
-        }
-        .pro-text p{
-         margin-left: 10px;;  
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 24px;
-        text-align: left;
-        
-        }
-        .pro-text :first-child{
-         
-        font-family: Lato;
-        font-size: 16px;
-        font-weight: 700;
-        line-height: 24px;
-        text-align: left;
-        
-        }
-        .indicators {
-          position: absolute;
-         
-          bottom: 20px;
-          left: 50%;
-          transform: translateX(-50%);
-        }
-        
-        .indicator {
-          display: inline-block;
-          width: 20px;
-          height: 10px;
-          background-color: #ccc;
-          border-radius: 25%;
-          margin: 0 5px;
-          cursor: pointer;
-        }
-        
-        .indicator.active {
-            width: 50px;
-          background-color: #043A53;
-        }
-        @media (max-width: 767px) {
-          .testimonial-container {
-            flex-direction: column; /* Change flex direction to display testimonials vertically */
-            align-items: center; /* Center align testimonials */
-          }
-          
-          .testimonial {
-            flex: 1 0 auto; /* Make each testimonial take full width */
-            margin: 10px 0; /* Add margin to separate testimonials */
-          }
-          
-          .testimonial-slider {
-            padding-top: 50px; /* Adjust padding to center testimonials */
-          }
-        }     
+           
          /*------------------------ testimonial-section end------------------------*/
 
 
