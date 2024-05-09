@@ -308,3 +308,446 @@ padding: 20px;
 }
 
 /* -------------------service end --------------------------*/
+/* -------------------book-call start --------------------------*/
+
+
+#book-call {
+    height: 134px;
+    background: #05A589;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+    #book-call a{
+        font-family: Lato;
+font-size: 36px;
+font-weight: 700;
+line-height: 72px;
+text-transform: uppercase;
+text-align: center;
+color:#fff;
+
+    }
+    @media (max-width: 768px) {
+        #book-call a{
+        font-family: Lato;
+font-size: 20px;
+font-weight: 700;
+line-height: 30px;
+text-transform: uppercase;
+text-align: center;
+color:#fff;
+
+    }  
+    }
+
+    /* -------------------book-call end --------------------------*/
+     /* -------------------area-experties start --------------------------*/
+     
+
+    #area-experties {
+        background-color: #fff; /* Background color for desktop */
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    
+    .experties_container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 90%;
+        margin: 0 auto;
+    }
+    .expert-right {
+        width: 70%; 
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+    .expert-left h1 {
+        font-family: Lato;
+        font-size: 60px;
+        font-weight: 700;
+        line-height: 72px;
+        letter-spacing: -0.02em;
+        text-align: left;
+        margin: 0;
+       }
+       .child-div p{   
+        
+        font-family: Lato;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 32px;
+        text-align: left;
+        color: #12141D;
+        
+        }
+       .child-div{ 
+    
+    word-wrap: break-word; 
+    height: Hug (96px)px;
+    top: -50px;
+    left: 45px;
+    padding: 32px 24px 32px 24px;
+    gap: 32px;
+    border-radius: 16px;
+    opacity: 0px;
+    background-color: #F2F5F6;
+    margin: 5px;
+    }
+    @media screen and (max-width: 768px) {
+        .experties_container {
+            display:block;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .expert-right {
+        width: 100%; 
+        display: block;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+    .expert-left h1 {
+        font-family: Lato;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 72px;
+        letter-spacing: -0.02em;
+        text-align: center;
+        margin: 0;
+       }
+       .child-div p{   
+        
+        font-family: Lato;
+        font-size: 21px;
+        font-weight: 700;
+        line-height: 32px;
+        text-align: center;
+        color: #12141D;
+        
+        }
+        #area-experties {
+        background-color: #fff; /* Background color for desktop */
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    }
+     /* -------------------area-experties end --------------------------*/
+     /* -------------------services-pak start --------------------------*/
+
+   
+
+
+     #services-pak{
+        background-color: #043A53; 
+        height: Fixed (226px)px;
+        justify: space-between;
+        opacity: 0px;
+      
+    padding: 50px;
+    
+    
+       
+     }   
+     .pak-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        margin-top: -10px;
+     }
+     .child-div1{
+        background-color: #043A53; 
+     width: 30%;
+     }
+     .child-div1 h1{
+       
+    font-family: Lato;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 72px;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+    
+     }
+     .child-div1 p {
+      
+     text-wrap: wrap;  
+    font-family: Lato;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 32px;
+    text-align: center;
+    
+    color: #fff;
+     }
+     @media screen and (max-width: 768px) {
+        .pak-container{
+        display: block;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        margin-top: -10px;
+     }
+     .child-div1{
+        background-color: #043A53; 
+     width: 100%;
+     }
+      }
+
+        /* -------------------services-pak end --------------------------*/
+
+
+        /*------------------------ testimonial-section start------------------------*/
+
+
+        #testimonial-section{
+            background-color: #f3f5f6;
+            display: flex;
+           justify-content: center;
+        align-items: center;
+        }
+        .testimonial-slider {
+          position: relative;
+          overflow: hidden;
+          max-width: 90%;
+          padding-top: 100px;
+         
+        }
+        
+        .testimonial-container {
+            margin-right: 10px;
+            padding-top: 50px;
+          padding-bottom: 100px;
+          display: flex;
+          transition: transform 0.5s ease;
+        }
+        
+        .testimonial {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 10px;
+            flex: 0 0 calc(50% - 20px); /* Adjust width calculation to account for margin */
+            margin: 0 10px; /* Add margin to create a gap */
+        }
+        .testimonial-slider h1{
+            
+        font-family: Lato;
+        font-size: 60px;
+        font-weight: 700;
+        line-height: 72px;
+        letter-spacing: -0.02em;
+        text-align: left;
+        
+        }
+        
+        .testimonial p{
+        padding: 5px;;    
+        font-family: Lato;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 32px;
+        text-align: left;
+        
+        }
+        .testimonial-img{
+            margin: 10px;
+            display: flex;
+        }
+        .pro-img img{
+            border-radius: 25px;
+        }
+        .pro-text p{
+         margin-left: 10px;;  
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: left;
+        
+        }
+        .pro-text :first-child{
+         
+        font-family: Lato;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 24px;
+        text-align: left;
+        
+        }
+        .indicators {
+          position: absolute;
+         
+          bottom: 20px;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+        
+        .indicator {
+          display: inline-block;
+          width: 20px;
+          height: 10px;
+          background-color: #ccc;
+          border-radius: 25%;
+          margin: 0 5px;
+          cursor: pointer;
+        }
+        
+        .indicator.active {
+            width: 50px;
+          background-color: #043A53;
+        }
+        @media (max-width: 767px) {
+          .testimonial-container {
+            flex-direction: column; /* Change flex direction to display testimonials vertically */
+            align-items: center; /* Center align testimonials */
+          }
+          
+          .testimonial {
+            flex: 1 0 auto; /* Make each testimonial take full width */
+            margin: 10px 0; /* Add margin to separate testimonials */
+          }
+          
+          .testimonial-slider {
+            padding-top: 50px; /* Adjust padding to center testimonials */
+          }
+        }     
+         /*------------------------ testimonial-section end------------------------*/
+
+
+/*------------------------ blog-section start------------------------*/
+
+
+
+         .blog-section {
+            padding: 50px 0; /* Adjust padding as needed */
+        }
+        .blog-container {
+            width: 90%;
+            margin: 0 auto; /* Center the container */
+            
+        }
+        .blog-heading{
+            display: flex;
+            
+        }
+        .blog-heading a{
+            text-wrap: nowrap;
+           margin-top: 30px;
+           text-decoration: none;
+           
+    font-family: Lato;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 28px;
+    text-align: right;
+    
+        }
+        .blog-heading h1{
+            font-family: Lato;
+            font-size: 60px;
+            font-weight: 700;
+            line-height: 1;
+            letter-spacing: -0.02em;
+            text-align: left;
+        }
+        .blog-posts {
+            display: flex;
+            flex-wrap: wrap; /* Allow posts to wrap */
+            justify-content: space-around; /* Align posts evenly */
+            margin-top: 20px; /* Add margin at the top */
+        }
+        .post {
+            padding-bottom: 10px;
+            border: 1px solid #ddd; /* Add border to each post */
+            margin-bottom: 20px; /* Add margin at the bottom */
+            width: calc(33.33% - 40px); /* Set width for each post */
+            box-sizing: border-box; /* Include padding and border in width calculation */
+            border-radius: 8px; /* Add border-radius for rounded corners */
+        }
+        .post img {
+            width: 100%; /* Ensure images don't exceed container width */
+            height: auto; /* Maintain aspect ratio */
+            margin-bottom: 10px; /* Add margin at the bottom of the image */
+            border-top-left-radius: 8px; /* Rounded corners for top-left */
+            border-top-right-radius: 8px; /* Rounded corners for top-right */
+        }
+        .post-date {
+          
+        font-family: Lato;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 24px;
+        text-align: left;
+        color:#000;
+        padding-left: 8px;  
+    
+        }
+        .post-title {
+            
+    font-family: Lato;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    text-align: left;
+    color:#000;
+        padding-left: 8px;  
+    
+        }
+        .post-des {
+           
+    font-family: Lato;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+    color:#404040;
+        padding-left: 8px;  
+        overflow: hidden; /* Hide overflow */
+        text-overflow: ellipsis; /* Add ellipsis for overflow text */
+        display: -webkit-box; /* Set as a block element */
+        -webkit-line-clamp: 2; /* Limit to 2 lines */
+        -webkit-box-orient: vertical; /* Set vertical orientation */
+    
+    
+        }
+        .post a {
+            padding: 8px;  
+            color: #12141D; /* Adjust link color */
+            text-decoration: none; /* Remove default underline */
+          
+            font-family: Lato;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 28px;
+            text-align: right;
+    
+        }
+        .post a:hover {
+            text-decoration: underline; /* Add underline on hover */
+        }
+        @media screen and (max-width: 768px) {
+            .blog-posts {
+            display: block;
+            flex-wrap: wrap; /* Allow posts to wrap */
+            justify-content: space-around; /* Align posts evenly */
+            margin-top: 20px; /* Add margin at the top */
+        }
+        .post {
+            padding-bottom: 10px;
+            border: 1px solid #ddd; /* Add border to each post */
+            margin-bottom: 20px; /* Add margin at the bottom */
+            width: calc(100% ); /* Set width for each post */
+            box-sizing: border-box; /* Include padding and border in width calculation */
+            border-radius: 8px; /* Add border-radius for rounded corners */
+        }
+        }
+
+        /*------------------------ blog-section end------------------------*/

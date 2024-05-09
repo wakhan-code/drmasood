@@ -7,7 +7,15 @@ eleventyNavigation:
   key: Home
   order: 100
 ---
-
+---
+title: 'Blog'
+description: 'Meta description for the page'
+preloadImg: '/assets/images/cabinets2.jpg'
+permalink: 'blog/'
+eleventyNavigation:
+    key: Blog
+    order: 500
+---
 {% extends "layouts/base.html" %}
 
 {% block head %}
@@ -17,7 +25,13 @@ eleventyNavigation:
     <link href='https://fonts.googleapis.com/css?family=Livvic' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Lexend Deca' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
-    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://releases.jquery.com/git/jquery-3.x-git.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <!-- Script for Netlify Identity -->
     <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
@@ -42,10 +56,7 @@ eleventyNavigation:
 
     <!-- ============================================ -->
     <!--                    Hero                      -->
-    <!-- ============================================ --> 
-    <style>
-      
-    </style>
+    <!-- ============================================ -->    
     <section id="hero">
         <div class="left-content">
             <h1>DR MUHAMMAD MASOOD KHOKHAR LT COL. (R)</h1>
@@ -84,48 +95,301 @@ eleventyNavigation:
     </div>
 </div>
 </div>
-<style>
-#book-call {
-    height: 134px;
-    background: #05A589;
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-    #book-call a{
-        font-family: Lato;
-font-size: 36px;
-font-weight: 700;
-line-height: 72px;
-text-transform: uppercase;
-text-align: center;
-color:#fff;
-
-    }
-    @media (max-width: 768px) {
-        #book-call a{
-        font-family: Lato;
-font-size: 20px;
-font-weight: 700;
-line-height: 30px;
-text-transform: uppercase;
-text-align: center;
-color:#fff;
-
-    }  
-    }
-</style>
-
 </section>
 <!-- ============================================ -->
     <!--                    book a call                      -->
  <!-- ============================================ --> 
  <section id="book-call">
-    <a href="">Book a consultation call with Dr Masood</a>
+    <a href="/contact">Book a consultation call with Dr Masood</a>
  </section>
-
+<!-- ============================================ -->
+    <!--                 Area of experties                     -->
+ <!-- ============================================ --> 
+ 
+ <section id="area-experties">
+    <div class="experties_container">
+      
+        <div class="expert-left" >
+             <h1>Areas of Expertise</h1>
+        </div> 
+        <div class="expert-right"  >
+            <div class="child-div"><p>Adult Psychiatry</p></div>
+            <div class="child-div"><p>Life-Style Medicine</p></div>
+            <div class="child-div"><p>Counselling</p></div>
+            <div class="child-div"><p>Child Psychiatry</p></div>
+            <div class="child-div"><p>Mental Health & Stress Management</p></div>
+         </div> 
+        </div>
    
+ </section>
+<!-- ============================================ -->
+    <!--                  services-pak                     -->
+ <!-- ============================================ --> 
+ <section id="services-pak">
+    <div class="pak-container">
+        <div class="child-div1">
+            <h1>95%</h1>
+            <p>Satisfaction Rate<br> Amongst Patients</p>
+        </div>
+        <div class="child-div1">
+            <h1>33</h1>
+            <p>Years of Service</p>
+        </div>
+        <div class="child-div1">
+            <h1>100k+</h1>
+            <p>Patients</p>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================ -->
+    <!--                  services-pak                     -->
+ <!-- ============================================ --> 
+<style>
+     #testimonial-section{
+            background-color: #f3f5f6;
+            display: flex;
+           justify-content: center;
+        align-items: center;
+        }
+        .testimonial-slider {
+          position: relative;
+          overflow: hidden;
+          max-width: 90%;
+          padding-top: 100px;
+         
+        }
+        
+        .testimonial-container {
+            margin-right: 10px;
+            padding-top: 50px;
+          padding-bottom: 100px;
+          display: flex;
+          transition: transform 0.5s ease;
+        }
+        
+        .testimonial {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 10px;
+            flex: 0 0 calc(50% - 20px); /* Adjust width calculation to account for margin */
+            margin: 0 10px; /* Add margin to create a gap */
+            min-height: 250px;
+        }
+        .testimonial-slider h1{
+            
+        font-family: Lato;
+        font-size: 60px;
+        font-weight: 700;
+        line-height: 72px;
+        letter-spacing: -0.02em;
+        text-align: left;
+        
+        }
+        
+        .testimonial p{
+        padding: 5px;;    
+        font-family: Lato;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 32px;
+        text-align: left;
+        
+        }
+        .testimonial-img{
+            margin: 10px;
+            display: flex;
+        }
+        .pro-img img{
+            border-radius: 25px;
+        }
+        .pro-text p{
+         margin-left: 10px;;  
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: left;
+        
+        }
+        .pro-text :first-child{
+         
+        font-family: Lato;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 24px;
+        text-align: left;
+        
+        }
+        .owl-nav{
+            display: none;
+        }
+        .owl-dots{
+            margin-top: 50px;
+        }
+        .cs-quote{
+            fill: #05A689;
+            text-align: left;
+        }
+        @media (max-width: 767px) {
+          .testimonial-container {
+            flex-direction: column; /* Change flex direction to display testimonials vertically */
+            align-items: center; /* Center align testimonials */
+          }
+          
+          .testimonial {
+            flex: 1 0 auto; /* Make each testimonial take full width */
+            margin: 10px 0; /* Add margin to separate testimonials */
+          }
+          
+          .testimonial-slider {
+            padding-top: 50px; /* Adjust padding to center testimonials */
+          }
+        } 
+</style>
+<section id="testimonial-section">
+    <div class="testimonial-slider">
+        <h1>Patient Testimonials</h1>
+        <div class="owl-carousel owl-theme testimonial-container ">
+            
+          
+          <div class="testimonial item">
+            <img class="cs-quote" aria-hidden="true" src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/quote-blue.svg"  decoding="async" alt="quote icon" width="40" height="33">
+         
+            <p>I'm totally unconvinced that two people can find a person they haven't known previously, and become an effective co-founder</p>
+            <div class="testimonial-img">
+            <div class="pro-img" ><img src="/assets/images/doctor.png" width="50" height="50"></div>
+              <div class="pro-text">
+                <p >Andrew Wilkins</p>
+                <p>Managing Director, Yess Company</p>
+              </div>
+           </div>
+        </div>
+        
+        <div class="testimonial item">
+            <img class="cs-quote" aria-hidden="true" src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/quote-blue.svg" decoding="async" alt="quote icon" width="40" height="33">
+         
+            <p>Easy to use, reasonably priced, and ensures I don’t drop the ball on following up with my leads!</p>
+           <div class="testimonial-img">
+            <div class="pro-img" ><img src="/assets/images/doctor.png" width="50" height="50"></div>
+              <div class="pro-text">
+                
+                <p >Daisy Phelps</p>
+                <p>Digital Marketing Director, Monatc</p>
+              </div>
+           </div>
+        </div>
+
+        <div class="testimonial item">
+            <img class="cs-quote" aria-hidden="true" src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/quote-blue.svg" decoding="async" alt="quote icon" width="40" height="33">
+         
+            <p>Easy to use, reasonably priced, and ensures I don’t drop the ball on following up with my leads!</p>
+           <div class="testimonial-img">
+            <div class="pro-img" ><img src="/assets/images/doctor.png" width="50" height="50"></div>
+              <div class="pro-text">
+                <p >Andrew Wilkins</p>
+                <p>Managing Director, Yess Company</p>
+              </div>
+           </div>
+        </div>
+         
+          
+        </div>
+        <!-- <div class="indicators">
+          <span class="indicator active"></span>
+          <span class="indicator"></span>
+          <span class="indicator"></span>
+          <span class="indicator"></span>
+        </div> -->
+      </div>
+</section>
+<!-- ============================================ -->
+    <!--                  services-pak                     -->
+ <!-- ============================================ --> 
+<script>
+ $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    margin:30,
+    dots:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:2
+        },
+        1000:{
+            items:2
+        }
+    }
+})
+
+</script>
+
+
+
+<section class="blog-section">
+    <div class="blog-container">
+        <div class="blog-heading"><h1>Read the latest psychiatry research by 
+            Dr. Masood</h1> <a href="/blog" >See All</a> </div>
+        <div class="blog-posts">
+            
+            {% if collections.post | length == 0 %}
+                <h1>No Recent Posts</h1>
+            {% else %}
+                {%- for post in collections.post | reverse  -%}
+            <div class="post">
+              <img src="{{ post.data.image }}" width="200">
+              <p class="post-date">{{ post.date | postDate }} <span>{{ post.data.author }}</span> </p>
+              <h2 class="post-title"> {{ post.data.title }}</h2>
+              <p class="post-des">  {{ post.data.description }}</p>
+              <a href="{{ post.url }}">Read Story</a>
+            </div>
+
+            {%- endfor -%}
+            {% endif %}
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<script>
+//     document.addEventListener("DOMContentLoaded", function() {
+//   const testimonialContainer = document.querySelector(".testimonial-container");
+//   const indicators = document.querySelectorAll(".indicator");
+//   let currentIndex = 0;
+
+//   function goToIndex(index) {
+//     currentIndex = index;
+//     const offset = -currentIndex * 50;
+//     testimonialContainer.style.transform = `translateX(${offset}%)`;
+//     updateIndicators();
+//   }
+
+//   function updateIndicators() {
+//     indicators.forEach((indicator, index) => {
+//       if (index === currentIndex) {
+//         indicator.classList.add("active");
+//       } else {
+//         indicator.classList.remove("active");
+//       }
+//     });
+//   }
+
+//   indicators.forEach((indicator, index) => {
+//     indicator.addEventListener("click", () => {
+//       goToIndex(index);
+//     });
+//   });
+
+//   // Initialize
+//   goToIndex(0);
+// });
+
+</script>
+
 {% endblock %}

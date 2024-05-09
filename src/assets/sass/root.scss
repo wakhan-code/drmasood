@@ -1198,7 +1198,7 @@
     #footer {
         font-size: min(4vw, 1.2em);
         padding: calc(84 / 16 * 1rem) 0 calc(20 / 16 * 1rem);
-        background: #1c1c1c;
+        background: #FAFAFA;
 
         .left-section {
             text-align: center;
@@ -1226,7 +1226,7 @@
                 width: 100%;
                 width: calc(307 / 14 * 1rem);
                 margin: auto;
-                color: #fff;
+                color: #404040;
                 opacity: 0.9;
             }
         }
@@ -1265,13 +1265,13 @@
                         font-size: calc(18 / 16 * 1rem);
                         list-style: none;
                         margin-bottom: calc(12 / 16 * 1rem);
-                        color: #fff;
+                        color: #404040;
                         opacity: 0.9;
 
                         a {
                             line-height: calc(21 / 18 * 1em);
                             text-decoration: none;
-                            color: #fff;
+                            color: #404040;
                             transition: color 0.3s;
                             &:hover {
                                 color: var(--primary);
@@ -1284,7 +1284,7 @@
                         line-height: calc(21 / 18 * 1em);
                         text-transform: uppercase;
                         margin-bottom: calc(37 / 16 * 1rem);
-                        color: #fff;
+                        color: #404040;
                         position: relative;
 
                         &:before {
@@ -1322,7 +1322,7 @@
             width: 96%;
             margin: auto;
             margin-top: calc(100 / 16 * 1rem);
-            color: #fff;
+            color: #404040;
 
             a {
                 font-size: calc(16 / 16 * 1rem);

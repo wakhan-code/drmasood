@@ -1002,7 +1002,7 @@
   #footer {
     font-size: min(4vw, 1.2em);
     padding: 5.25rem 0 1.25rem;
-    background: #1c1c1c;
+    background: #FAFAFA;
   }
   #footer .left-section {
     text-align: center;
@@ -1029,7 +1029,7 @@
     width: 100%;
     width: 21.9285714286rem;
     margin: auto;
-    color: #fff;
+    color: #404040;
     opacity: 0.9;
   }
   #footer .right-section {
@@ -1066,13 +1066,13 @@
     font-size: 1.125rem;
     list-style: none;
     margin-bottom: 0.75rem;
-    color: #fff;
+    color: #404040;
     opacity: 0.9;
   }
   #footer .right-section .lists ul li a {
     line-height: 1.1666666667em;
     text-decoration: none;
-    color: #fff;
+    color: #404040;
     transition: color 0.3s;
   }
   #footer .right-section .lists ul li a:hover {
@@ -1084,7 +1084,7 @@
     line-height: 1.1666666667em;
     text-transform: uppercase;
     margin-bottom: 2.3125rem;
-    color: #fff;
+    color: #404040;
     position: relative;
   }
   #footer .right-section .lists ul h2:before {
@@ -1115,7 +1115,7 @@
     width: 96%;
     margin: auto;
     margin-top: 6.25rem;
-    color: #fff;
+    color: #404040;
   }
   #footer .credit a {
     font-size: 1rem;
