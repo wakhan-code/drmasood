@@ -1475,6 +1475,50 @@ line-height: 24px;
             gap: 0px;
             opacity: 0px;
             font-family: Lexend Deca;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 24px;
+            text-align: left;
+            color:#fff;
+            
+            text-wrap: nowrap;
+            margin-left: 150px;
+        }
+    }
+   
+}
+@media only screen and (min-width: 64em) {
+    #cs-navigation{
+        padding: 10px;
+        background-color: #043A53;
+        color:#fff;
+    }
+    .cs-button-solid{
+        border-radius: 10px;
+        color: #fff;
+    }
+    #cs-navigation .cs-li-link{
+        font-family: Lexend Deca;
+font-size: 20px;
+font-weight: 400;
+line-height: 24px;
+
+
+        color: #FFF;
+    }
+    .cs-logo h2 {
+        text-decoration: none; /* Remove !important */
+      }
+    .cs-logo {
+        text-decoration: none;
+        h2 {
+            width: 432px;
+            height: 54px;
+            margin-top: 30px;
+            
+            gap: 0px;
+            opacity: 0px;
+            font-family: Lexend Deca;
             font-size: 32px;
             font-weight: 400;
             line-height: 24px;
@@ -1487,8 +1531,3 @@ line-height: 24px;
     }
    
 }
-@media (max-width: 768px) {
-    .cs-logo h2{
-        font-size: 24px;
-    }
-    }
