@@ -232,6 +232,16 @@ eleventyNavigation:
             text-align: left;
         }
         @media (max-width: 767px) {
+            .testimonial-slider h1{
+            
+            font-family: Lato;
+            font-size: 40px;
+            font-weight: 700;
+            line-height: 72px;
+            letter-spacing: -0.02em;
+            text-align: center;
+            
+            }
           .testimonial-container {
             flex-direction: column; /* Change flex direction to display testimonials vertically */
             align-items: center; /* Center align testimonials */
@@ -295,12 +305,7 @@ eleventyNavigation:
          
           
         </div>
-        <!-- <div class="indicators">
-          <span class="indicator active"></span>
-          <span class="indicator"></span>
-          <span class="indicator"></span>
-          <span class="indicator"></span>
-        </div> -->
+
       </div>
 </section>
 <!-- ============================================ -->
@@ -356,41 +361,5 @@ eleventyNavigation:
 
 
 
-
-
-<script>
-//     document.addEventListener("DOMContentLoaded", function() {
-//   const testimonialContainer = document.querySelector(".testimonial-container");
-//   const indicators = document.querySelectorAll(".indicator");
-//   let currentIndex = 0;
-
-//   function goToIndex(index) {
-//     currentIndex = index;
-//     const offset = -currentIndex * 50;
-//     testimonialContainer.style.transform = `translateX(${offset}%)`;
-//     updateIndicators();
-//   }
-
-//   function updateIndicators() {
-//     indicators.forEach((indicator, index) => {
-//       if (index === currentIndex) {
-//         indicator.classList.add("active");
-//       } else {
-//         indicator.classList.remove("active");
-//       }
-//     });
-//   }
-
-//   indicators.forEach((indicator, index) => {
-//     indicator.addEventListener("click", () => {
-//       goToIndex(index);
-//     });
-//   });
-
-//   // Initialize
-//   goToIndex(0);
-// });
-
-</script>
 
 {% endblock %}
