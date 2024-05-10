@@ -520,6 +520,7 @@ color:#fff;
 
          .blog-section {
             padding: 50px 0; /* Adjust padding as needed */
+            background-color: #fff;
         }
         .blog-container {
             width: 90%;
@@ -626,6 +627,19 @@ color:#fff;
             text-decoration: underline; /* Add underline on hover */
         }
         @media screen and (max-width: 768px) {
+            .blog-section {
+                padding: 50px 0; /* Adjust padding as needed */
+                background-color: #fff;
+            }
+            .blog-container {
+                width: 100%;
+                margin: 0 auto; /* Center the container */
+                
+            }
+            .blog-heading{
+                display: block;
+                
+            }
             .blog-heading h1{
                 font-family: Lato;
                 font-size: 40px;
