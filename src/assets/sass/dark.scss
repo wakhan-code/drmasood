@@ -14,7 +14,7 @@
     }
 
     body.dark-mode {
-        background-color: var(--dark);
+        // background-color: var(--dark);
 
         // p,
         // li,
@@ -28,17 +28,17 @@
         // }
 
         // hide all light classes
-        .light {
-            display: none;
-        }
+    //     .light {
+    //         display: none;
+    //     }
 
-        // show all dark classes
-        .dark {
-            display: block !important;
-        }
-    }
+    //     // show all dark classes
+    //     .dark {
+    //         display: block !important;
+    //     }
+    // }
 
-    .dark {
-        display: none;
-    }
+    // .dark {
+    //     display: none;
+    // }
 }
