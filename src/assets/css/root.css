@@ -1134,6 +1134,7 @@
 @media only screen and (min-width: 64em) {
   #footer {
     font-size: min(1.2vw, 1em);
+    background: #FAFAFA;
   }
   #footer .container {
     width: 96%;
