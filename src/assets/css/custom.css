@@ -626,6 +626,14 @@ color:#fff;
             text-decoration: underline; /* Add underline on hover */
         }
         @media screen and (max-width: 768px) {
+            .blog-heading h1{
+                font-family: Lato;
+                font-size: 40px;
+                font-weight: 700;
+                line-height: 1;
+                letter-spacing: -0.02em;
+                text-align: center;
+            }
             .blog-posts {
             display: block;
             flex-wrap: wrap; /* Allow posts to wrap */
