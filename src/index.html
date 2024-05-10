@@ -342,7 +342,7 @@ eleventyNavigation:
                 {%- for post in collections.post | reverse  -%}
             <div class="post">
               <img src="{{ post.data.image }}" width="200">
-              <p class="post-date">{{ post.date | postDate }} <span>{{ post.data.author }}</span> </p>
+              <p class="post-date">{{ post.date | postDate }},<span class="post-author"> by {{ post.data.author }}</span> </p>
               <h2 class="post-title"> {{ post.data.title }}</h2>
               <p class="post-des">  {{ post.data.description }}</p>
               <a href="{{ post.url }}">Read Story</a>
