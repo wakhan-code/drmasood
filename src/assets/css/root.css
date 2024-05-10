@@ -1248,5 +1248,10 @@
     margin-left: 150px;
   }
 }
+@media (max-width: 768px) {
+  .cs-logo h2 {
+    font-size: 24px;
+  }
+}
 
 /*# sourceMappingURL=root.css.map */
