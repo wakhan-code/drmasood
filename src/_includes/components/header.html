@@ -2,7 +2,8 @@
 <!--                 Navigation                   -->
 <!-- ============================================ -->
 
-<header id="cs-navigation">
+<header id="cs-navigation" style="margin-top: 30px;">
+  
   <div class="cs-container">
     <!--Nav Logo-->
     <a href="/" class="cs-logo" aria-label="back to home">
@@ -64,3 +65,16 @@
     </button> -->
   </div>
 </header>
+<script>
+  window.addEventListener('scroll', function() {
+      var header = document.getElementById('cs-navigation');
+      // Check if the vertical scroll position is greater than 0
+      if (window.scrollY > 0) {
+          // If scrolled down, set margin-top to 0px
+          header.style.marginTop = '0px';
+      } else {
+          // If at the top, set margin-top to 30px
+          header.style.marginTop = '30px';
+      }
+  });
+</script>
