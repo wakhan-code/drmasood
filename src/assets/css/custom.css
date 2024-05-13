@@ -705,6 +705,11 @@ color:#fff;
             box-sizing: border-box; /* Include padding and border in width calculation */
             border-radius: 8px; /* Add border-radius for rounded corners */
         }
+        .see-all{
+            text-align: center;
+            margin-top: 5px;
+            color: #043A53;
+        }
         }
 
         /*------------------------ blog-section end------------------------*/
