@@ -275,9 +275,9 @@ padding: 20px;
 
     .container-left h1 {
         color: #fff; /* Text color for h1 on mobile */
-        font-size: 40px; /* Example font size */
+        font-size: 30px; /* Example font size */
         font-weight: 700;
-        line-height: 92px;
+        line-height: 1;
         letter-spacing: -0.02em;
         text-align: center; /* Center align on mobile */
        line-height: 30px;
