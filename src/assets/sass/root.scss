@@ -1194,7 +1194,23 @@
 <--- -------------------------- -*/
 
 /* Mobile */
+.footer-logo{
+    font-family: Lexend Deca;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+
+}
 @media only screen and (min-width: 0em) {
+    .footer-logo{
+        font-family: Lexend Deca;
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: center;
+    
+    }
     #footer {
         font-size: min(4vw, 1.2em);
         padding: calc(84 / 16 * 1rem) 0 calc(20 / 16 * 1rem);
