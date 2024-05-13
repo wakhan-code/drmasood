@@ -175,10 +175,10 @@ eleventyNavigation:
             padding: 10px;
             flex: 0 0 calc(50% - 20px); /* Adjust width calculation to account for margin */
             margin: 0 10px; /* Add margin to create a gap */
-            min-height: 250px;
+            min-height: 270px;
         }
-        .testimonial-slider h1{
-            
+        .testimonial-slider .header{
+       
         font-family: Lato;
         font-size: 60px;
         font-weight: 700;
@@ -225,14 +225,26 @@ eleventyNavigation:
             display: none;
         }
         .owl-dots{
-            margin-top: 50px;
+            margin-top:50px !important;
         }
-        .cs-quote{
-            fill: #05A689;
-            text-align: left;
-        }
+        .double-commas {
+    font-size: 6rem !important;
+    font-weight: 700;
+    color: #05A689;
+    text-align: left;
+   
+}
+.testimonial-slider .owl-theme .owl-dots .owl-dot.active span {
+    width: 35px;
+    background: #05A689;
+}
+
+.testimonial-slider .owl-theme .owl-dots span, .owl-theme .owl-dots .owl-dot:hover span {
+    width: 17px;
+   
+}
         @media (max-width: 767px) {
-            .testimonial-slider h1{
+            .testimonial-slider .header{
             
             font-family: Lato;
             font-size: 40px;
@@ -242,6 +254,25 @@ eleventyNavigation:
             text-align: center;
             
             }
+            
+        .testimonial p{
+        
+        padding: 5px;   
+        font-family: Lato;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 32px;
+        text-align: left;
+        
+        }
+        .pro-text p{
+         margin-left: 10px;;  
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: left;
+        
+        }
           .testimonial-container {
             flex-direction: column; /* Change flex direction to display testimonials vertically */
             align-items: center; /* Center align testimonials */
@@ -259,15 +290,16 @@ eleventyNavigation:
 </style>
 <section id="testimonial-section">
     <div class="testimonial-slider">
-        <h1>Patient Testimonials</h1>
+        <h1 class="header">Patient Testimonials</h1>
         <div class="owl-carousel owl-theme testimonial-container ">
             
           
           <div class="testimonial item">
-            <img class="cs-quote" aria-hidden="true" src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/quote-blue.svg"  decoding="async" alt="quote icon" width="40" height="33">
-         
-            <p>I'm totally unconvinced that two people can find a person they haven't known previously, and become an effective co-founder</p>
-            <div class="testimonial-img">
+           
+            <h1 class="double-commas">“</h1>
+             <p style="margin-top: -50px;">I'm totally unconvinced that two people can find a person they haven't known previously, and become an effective co-founder</p>
+            
+             <div class="testimonial-img">
             <div class="pro-img" ><img src="/assets/images/doctor.png" width="50" height="50"></div>
               <div class="pro-text">
                 <p >Andrew Wilkins</p>
@@ -277,9 +309,8 @@ eleventyNavigation:
         </div>
         
         <div class="testimonial item">
-            <img class="cs-quote" aria-hidden="true" src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/quote-blue.svg" decoding="async" alt="quote icon" width="40" height="33">
-         
-            <p>Easy to use, reasonably priced, and ensures I don’t drop the ball on following up with my leads!</p>
+            <h1 class="double-commas">“</h1>
+            <p style="margin-top: -50px;">Easy to use, reasonably priced, and ensures I don’t drop the ball on following up with my leads!</p>
            <div class="testimonial-img">
             <div class="pro-img" ><img src="/assets/images/doctor.png" width="50" height="50"></div>
               <div class="pro-text">
@@ -291,9 +322,8 @@ eleventyNavigation:
         </div>
 
         <div class="testimonial item">
-            <img class="cs-quote" aria-hidden="true" src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/quote-blue.svg" decoding="async" alt="quote icon" width="40" height="33">
-         
-            <p>Easy to use, reasonably priced, and ensures I don’t drop the ball on following up with my leads!</p>
+            <h1 class="double-commas">“</h1>
+            <p style="margin-top: -50px;">Easy to use, reasonably priced, and ensures I don’t drop the ball on following up with my leads!</p>
            <div class="testimonial-img">
             <div class="pro-img" ><img src="/assets/images/doctor.png" width="50" height="50"></div>
               <div class="pro-text">
@@ -311,55 +341,65 @@ eleventyNavigation:
 <!-- ============================================ -->
     <!--                  services-pak                     -->
  <!-- ============================================ --> 
-<script>
- $('.owl-carousel').owlCarousel({
-    loop:true,
-    margin:10,
-    nav:true,
-    margin:30,
-    dots:true,
-    responsive:{
-        0:{
-            items:1
-        },
-        600:{
-            items:2
-        },
-        1000:{
-            items:2
-        }
-    }
-})
-
-</script>
 
 
 
-<section class="blog-section">
+
+ <section id="blog-section" class="blog-section">
     <div class="blog-container">
-        <div class="blog-heading"><h1>Read the latest psychiatry research by 
-            Dr. Masood</h1> <a href="/blog" >See All</a> </div>
+        <div class="blog-heading">
+            <h1>Read the latest psychiatry research by Dr. Masood</h1>
+            <a href="/blog">See All</a>
+        </div>
         <div class="blog-posts">
-            
             {% if collections.post | length == 0 %}
                 <h1>No Recent Posts</h1>
             {% else %}
-                {%- for post in collections.post | reverse  -%}
-            <div class="post">
-              <img src="{{ post.data.image }}" width="200">
-              <p class="post-date">{{ post.date | postDate }},<span class="post-author"> by {{ post.data.author }}</span> </p>
-              <h2 class="post-title"> {{ post.data.title }}</h2>
-              <p class="post-des">  {{ post.data.description }}</p>
-              <a href="{{ post.url }}">Read Story</a>
-            </div>
-
-            {%- endfor -%}
+                <script>
+                    document.addEventListener('DOMContentLoaded', function() {
+                        var posts = document.querySelectorAll('.blog-posts .post');
+                        for (var i = 0; i < posts.length; i++) {
+                            if (i >= 3) {
+                                posts[i].style.display = 'none';
+                            }
+                        }
+                    });
+                </script>
+                {%- for post in collections.post | reverse -%}
+                    <div class="post">
+                        <img src="{{ post.data.image }}" width="200">
+                        <p class="post-date">{{ post.date | postDate }},<span class="post-author"> by {{ post.data.author }}</span></p>
+                        <h2 class="post-title">{{ post.data.title }}</h2>
+                        <p class="post-des">{{ post.data.description }}</p>
+                        <a href="{{ post.url }}">Read Story</a>
+                    </div>
+                {%- endfor -%}
             {% endif %}
         </div>
     </div>
 </section>
 
 
-
+<script>
+    $('.owl-carousel').owlCarousel({
+       loop:true,
+       margin:10,
+       nav:true,
+       margin:30,
+       dots:true,
+       responsive:{
+           0:{
+               items:1
+           },
+           600:{
+               items:2
+           },
+           1000:{
+               items:2
+           }
+       }
+   })
+   
+   </script>
 
 {% endblock %}
