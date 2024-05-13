@@ -1202,6 +1202,17 @@
     text-align: left;
 
 }
+.lists .h2{
+    display: none;
+    font-family: Lato;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    text-align: left;
+    color:#12141D;
+    
+ }
+                      
 @media only screen and (min-width: 0em) {
     .footer-logo{
         font-family: Lexend Deca;
@@ -1373,7 +1384,16 @@
             justify-content: space-between;
             flex-wrap: nowrap;
         }
-
+         .lists .h2{
+            display: none;
+            font-family: Lato;
+            font-size: 21px;
+            font-weight: 400;
+            line-height: 32px;
+            text-align: left;
+            color:#12141D;
+            
+         }
         .left-section {
             text-align: left;
             width: calc(409 / 16 * 1rem);
@@ -1456,8 +1476,11 @@
         #footer {
             background: #FAFAFA !important;
         }
+        
     }
 }
+
+
 /* custome /////////////////////////////////////////////////////////////////*/
 @media only screen and (min-width: 0em) {
     #cs-navigation{
