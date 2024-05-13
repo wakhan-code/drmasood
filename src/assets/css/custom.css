@@ -236,6 +236,7 @@ padding: 20px;
 
 /* Media query for responsive design */
 @media (max-width: 768px) {
+    
     #video {
     padding-top: 100px;
     display: flex;
@@ -274,14 +275,18 @@ padding: 20px;
 
     .container-left h1 {
         color: #fff; /* Text color for h1 on mobile */
-        font-size: 20px; /* Example font size */
+        font-size: 40px; /* Example font size */
+        font-weight: 700;
+        line-height: 92px;
+        letter-spacing: -0.02em;
         text-align: center; /* Center align on mobile */
        line-height: 30px;
     }
 
     .container-right p {
         color: #fff; /* Text color for p on mobile */
-        font-size: 15px; /* Example font size */
+        font-size: 18px; /* Example font size */
+        font-weight: 400;
         text-align: center; /* Center align on mobile */
     }
 }
