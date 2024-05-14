@@ -738,6 +738,8 @@ color:#fff;
         .post img {
             width: 100%; /* Ensure images don't exceed container width */
             height: auto; /* Maintain aspect ratio */
+            max-height: 240px;
+            min-height: 240px
             margin-bottom: 10px; /* Add margin at the bottom of the image */
             border-top-left-radius: 8px; /* Rounded corners for top-left */
             border-top-right-radius: 8px; /* Rounded corners for top-right */
